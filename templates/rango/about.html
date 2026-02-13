@@ -2,10 +2,18 @@
 
 {% load staticfiles %}
 
-<html>
-    <head>
-        <title>Rango</title>
-    </head>
+{% block title_block %}
+About Rango
+{% endblock %}
+{% block body_block %}  
+<h1>Rango says...</h1>
+<p>here is the about page.</p>
+<div> 
+    hey there partner! <br />
+    <strong>This tutorial has been put together by Theresa</strong><br />
+</div>
+<div>
+    <a href="{% url 'rango:index' %}">Index</a><br />
 
     <body>
         <h1>Rango says here is the about page</h1>
